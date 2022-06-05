@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="details"></h1>
+    <script>
+        // const a={'student': [{'firstname':'dj','lastname':'r'}]}
+        // document.getElementById('details').innerHTML=a.student[0].firstname + " " + a.student[0].lastname
+
+
+
+
+
+
+
+        let a='{"student": [{"firstname":"dj","lastname":"r"}]}'
+        const b=JSON.parse(a);
+        b.student[0].firstname='dhananjayan';
+         document.getElementById('details').innerHTML=b.student[0].firstname + " " + b.student[0].lastname
+        
+    </script>
+</body>
+</html>
